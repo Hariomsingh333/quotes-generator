@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quotes genrator by Hari om</title>
+    <title>random quotes generator by Hari om</title>
     <link rel="stylesheet" href="style.css" />
     <!-- bootstrap css  -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
-    />
+    /> -->
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,38 +21,37 @@
       rel="stylesheet"
     />
   </head>
-  <body class="d-flex flex-column" style="width: 100%; min-height: 100vh">
-    <div
+  <body class="d-flex flex-column">
+    <!-- <div
       class="
         d-flex
         flex-column
         align-items-center
         justify-content-center
         my-auto
+        body
       "
-    >
-      <div class="card rounded-3" style="width: 25rem">
-        <div class="card-body">
-          <div
-            id="quotes"
-            class="text-center m-3"
-            style="font-family: 'Noto Serif', serif"
-          ></div>
-          <div id="author" class="blockquote-footer text-end"></div>
-          <button
-            type="buttons"
-            class="btn btn-outline-secondary"
-            id="btn"
-            style="border-radius: 20px"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="for new quotes"
-          >
-            new
-          </button>
-        </div>
+    > -->
+    <div class="container">
+      <h1 id="header">Random quotes generator</h1>
+      <div class="card rounded-3">
+        <!-- <div class="card-body"> -->
+        <p id="quotes" class="text-center m-3"></p>
+        <p id="author" class="blockquote-footer text-end"></p>
+        <button
+          type="buttons"
+          class="btn btn-outline-secondary"
+          id="btn"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          title="for new quotes"
+        >
+          new
+        </button>
       </div>
     </div>
+    <!-- </div> -->
+    <!-- </div> -->
     <footer
       class="
         bg-info

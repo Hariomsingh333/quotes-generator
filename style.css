@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto+Mono:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  background: linear-gradient(45deg, #e4bdbd, #6e85b2);
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border: none;
+  border-radius: 5px;
+  width: 30rem;
+  box-shadow: 4px 4px 10px rgb(99, 98, 98);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  background-color: rgb(241, 235, 235);
+  font-size: 1.5rem;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+#header {
+  font-family: "Dancing Script", cursive;
+}
+button {
+  padding: 0.3rem 0.6rem;
+  margin-top: 0.5rem;
+  background-color: #f6a9a9;
+  border: none;
+  transition: 0.2s all linear;
+  font-size: 1rem;
+}
+button:hover {
+  cursor: pointer;
+  transform: translateY(-0.15rem);
+  border-radius: 25px;
+  background-color: #464660;
+  color: pink;
+  box-shadow: 2px 2px 4px #464660;
+}
+#quotes {
+  text-align: left;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+#author {
+  text-align: right;
+  /* font-family: monospace; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Roboto Mono", monospace;
+  opacity: 0.9;
+}
+#author::before {
+  content: "― ";
+}
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 786px) {
+  .card {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 20rem;
+  }
+}

@@ -80,6 +80,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-size: 0.7rem;
 }
 @media screen and (max-width: 786px) {
   .card {
